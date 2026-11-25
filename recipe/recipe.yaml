@@ -31,6 +31,7 @@ requirements:
     - root_cxx_standard
     - python
     - gsl
+    - libopenblas
     - scipy
     - numpy
     - numba
@@ -68,6 +69,7 @@ requirements:
     - ipython
     - root_base
     - gsl
+    - libopenblas
     - scipy
     - numpy
     - numba
@@ -99,8 +101,8 @@ requirements:
     - py-cpuinfo
     - parallel
     - pytorch
-    - h5py 
-    
+    - h5py
+
 tests:
   - python:
       imports:
@@ -125,3 +127,5 @@ extra:
   recipe-maintainers:
     - TatianaOvsiannikova
     - VanyaBelyaev
+
+
