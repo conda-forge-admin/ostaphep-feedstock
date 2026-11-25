@@ -14,7 +14,7 @@ source:
   target_directory: ostap
 
 build:
-  number: 1
+  number: 2
   skip:
     - win
 
@@ -44,7 +44,6 @@ requirements:
     - ppft
     - joblib
     - ipyparallel
-    - h5py
     - zstandard
     - more-itertools
     - sortedcontainers
@@ -99,7 +98,9 @@ requirements:
     - hep_ml
     - py-cpuinfo
     - parallel
-
+    - pytorch
+    - h5py 
+    
 tests:
   - python:
       imports:
