@@ -14,14 +14,14 @@ source:
   target_directory: ostap
 
 build:
-  number: 1
+  number: 2
   skip:
     - win
 
 requirements:
   build:
     - ${{ compiler('c') }}
-    - ${{ stdlib("c") }}
+    - ${{ stdlib('c') }}
     - ${{ compiler('cxx') }}
     - cmake
     - make
@@ -31,44 +31,21 @@ requirements:
     - root_cxx_standard
     - python
     - gsl
+    - blas
+    - lapack
     - libopenblas
-    - scipy
-    - numpy
-    - numba
     - cffi
     - pip
     - wheel
     - setuptools
-    - pathos
-    - dill
-    - multiprocess
-    - ppft
-    - joblib
-    - ipyparallel
-    - zstandard
-    - more-itertools
-    - sortedcontainers
-    - psutil
-    - tabulate
-    - terminaltables
-    - pathvalidate
-    - packaging
     - libdb
-    - duckdb
-    - fasteners
-    - statsmodels
-    - pandas
-    - xgboost
-    - catboost
-    - lightgbm
-    - sweetviz
-    - hep_ml
-    - py-cpuinfo
   run:
     - python
     - ipython
     - root_base
     - gsl
+    - blas
+    - lapack
     - libopenblas
     - scipy
     - numpy
@@ -109,6 +86,7 @@ tests:
         - ostap
         - ostap.core.core
         - ostap.core.pyrouts
+      pip_check: true
   - script:
       - ostap --help
       - check-dependencies
