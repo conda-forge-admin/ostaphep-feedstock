@@ -31,8 +31,9 @@ requirements:
     - root_cxx_standard
     - python
     - gsl
-    - blas
-    - lapack
+    - libblas * *openblas
+    - libcblas * *openblas
+    - liblapack * *openblas
     - libopenblas
     - cffi
     - pip
@@ -44,8 +45,9 @@ requirements:
     - ipython
     - root_base
     - gsl
-    - blas
-    - lapack
+    - libblas * *openblas
+    - libcblas * *openblas
+    - liblapack * *openblas
     - libopenblas
     - scipy
     - numpy
